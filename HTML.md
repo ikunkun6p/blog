@@ -1,6 +1,18 @@
 ## HTML诞生于李爵士的文章《HTML Tags》。
 
-起手时应该写!DOCTYPE html,所谓的网页骨架，在vscode用打英文!后自动生成。
+起手时应该写<!DOCTYPE html>   //文档类型
+<html lang="en">    //网页语言
+<head>  // 头部标签
+  <meta charset="UTF-8">  // 字符串编码 UTF-8 万国码，一般不用管
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">   //浏览器内核
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  // 手机端访问禁用缩放
+  <title>Documents</title>  //网页标签栏显示的内容
+</head>
+<body>
+  content // 内容写在里面
+</body>
+</html>,
+所谓的网页骨架，在vscode用打英文!后自动生成。
 
 ### 常用的章节标签：
 * h1——h6：表示标题，从1-6字体大小依次变小。
