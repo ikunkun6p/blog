@@ -44,15 +44,19 @@ obj.__proto__.toString = 'xxx' 这样所有的对象方法都会被修改。
 
 修改隐藏属性：
 不推荐用__proto__：
+```
 let obj = {name: 'frank'}
 let obj2 = {name: 'jack'}
 let common = {kind: 'human'}
 obj.__proto__ = conmon    obj2.__proto__ = common
+```
 推荐用Object.create：
+```
 let obj = Object.create(common)
 obj.name = 'frank'
 let obj2 = Object.create(common)
 obj2.name = 'jack'
+```
 如果要改就一开始改好，不要中途再修改。
 
 ### 'name' in obj和obj.hasOwnProperty('name') 的区别
