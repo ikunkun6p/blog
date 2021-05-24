@@ -24,6 +24,7 @@ obj.xxx === undefined 不能判断'xxx' 是否是obj的属性。
 类比：你有没有带卫生纸。没有→不含属性；有，但没带→有但值是undefined。
 
 ## 如何查看对象的属性
+```
 查看自身所有属性： Object.keys(obj)
 查看自身+共有属性：console.log(obj)或依次用Object.keys打印出obj.__proto__
 判断一个属性是自身还是共有：obj.hasOwnProperty('toString')
