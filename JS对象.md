@@ -56,5 +56,5 @@ obj2.name = 'jack'
 如果要改就一开始改好，不要中途再修改。
 
 ### 'name' in obj和obj.hasOwnProperty('name') 的区别
-'name' in obj：是检测对象obj中是否存在'name' 这个属性，但并不关注该属性是否为obj本身所有。
-obj.hasOwnProperty('name')：检测对象obj中是否存在'name'属性，如果存在，是否是obj的__proto__地址中自带的属性。
+'name' in obj：是检测对象obj中是否存在'name' 这个属性，obj本身或者原型中有的话都会返回true.
+obj.hasOwnProperty('name')：检测对象obj中是否存在'name'属性，仅obj自身中有此属性时才返回true.
