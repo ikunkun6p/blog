@@ -13,13 +13,15 @@ console.log({'name': 'frank', 'age': 18 })	//匿名对象
 ## 如何删除对象的属性
 ```
 delete obj.xxx
-```或 
-```
+或 
 delete obj['xxx']
 ```
 这样可以删除obj的xxx属性。注意区分属性值为undefined和不含属性名。
 不含属性名：'xxx' in obj === false
-含有属性名但值是undefined： 'xxx' in obj && obj.xxx === undefined
+含有属性名但值是undefined： 
+```
+'xxx' in obj && obj.xxx === undefined
+```
 obj.xxx === undefined 不能判断'xxx' 是否是obj的属性。
 类比：你有没有带卫生纸。没有→不含属性；有，但没带→有但值是undefined。
 
