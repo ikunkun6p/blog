@@ -20,19 +20,22 @@ $('div') //找到div元素
 
 ## jQuery 如何创建元素
 创建元素只需要把新元素放到jQuery构造的函数里就可以了
-
+```
 $('<p>Hello</p>');
 $('<li class="new">new list item</li>');
 $('ul').append('<li>list item</li>');
-
+```
 ## jQuery 如何移动元素
 第一种方法是使用 .insertAfter，将 div 元素移动 p 元素后面：
-
+```
 $('div').insertAfter($('p'));
+```
 第二种方法是使用 .after()，达到同样的效果
-
+```
 $('p').after($('div'));
-
+```
 ## jQuery 如何修改元素的属性
+```
 $("div").clone() //只克隆了结构，事件丢失
 $("div").clone(true) //结构、事件与数据都克隆
+```
